@@ -1,14 +1,13 @@
-function nasaresquested (){ 
-  
+
+
+
+function nasaRequest (data){
+    console.log ()
     //Chama a API para o arquivo
     const urlB = 'https://api.nasa.gov/planetary/apod?';
     const apiKey = config.NASA_API_KEY;
-    let dateb = "&" + "date=" + "2021-09-16" + "&";
+    let dateb = "&" + "date=" + data + "&";
     let fullUrl = urlB + apiKey + dateb;
-
-    //Colocar outras datas
-    // const datePicker = document.getElementById ("datePicker");
-    // datePicker.addEventListener('change', (e) );
 
     //Faz o pedido Http
     let xmlhttp = new XMLHttpRequest ();
@@ -57,5 +56,15 @@ function nasaresquested (){
 
     xmlhttp.open ("GET", fullUrl, true);
     xmlhttp.send ();
-}    
-nasaresquested().onload();
+}
+// Colocar outras datas
+const datePicker = document.getElementById("datePic");
+const valorData = datePicker.value;
+console.log (valorData)
+
+// Botão
+const botao = document.getElementById("btn");
+botao.addEventListener ("click", function (){
+    document.location.reload(false)
+})
+nasaRequest(valorData)
