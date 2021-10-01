@@ -2,4 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body{
+    background: #032B43;
+    color: #DFCCB9;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.date-picker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.date-picker label{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #DFCCB9;
+}
+.date-picker input{
+    width: 500px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+#btn {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    height: 30px;
+    margin: 15px 0;
+}
+#media {
+    display: flex;
+    justify-content: center;
+}
+.dataTitCop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    margin: 30px 30px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

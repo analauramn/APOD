@@ -58,4 +58,4 @@ function nasaresquested (){
     xmlhttp.open ("GET", fullUrl, true);
     xmlhttp.send ();
 }    
-nasaresquested().onload;
+nasaresquested().onload();
